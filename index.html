@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>Inicio de Sesión</title>
+  </head>
+  <body>
+    <!-- Inicio de Sesion -->
+
+    <main>
+      <div class="login-box">
+        <form class="login-form" id="login-form">
+          <input type="email" placeholder="Correo Electronico" id="email" />
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Contraseña"
+          />
+          <input
+            type="submit"
+            value="Entrar"
+            class="login-boton-entrar"
+            id="btnEntrar"
+          />
+          <a class="login-boton-registro" href="registro.html">Registrate</a>
+        </form>
+      </div>
+    </main>
+
+    <!-- Inicio de Sesion -->
+
+    <!-- Firebase App is always required and must be first -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+
+    <!-- Firebase App is always required and must be first -->
+
+    <!-- Firebase controllers -->
+
+    <script src="./src/js/Firebase/configFirebase.js"></script>
+    <script src="./src/js/Firebase/Auth/autentication.js"></script>
+    <script src="./src/js/Firebase/Auth/authController.js"></script>
+
+    <!-- Firebase controllers -->
+  </body>
+</html>
