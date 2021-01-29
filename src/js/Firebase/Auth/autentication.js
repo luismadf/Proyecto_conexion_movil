@@ -18,7 +18,9 @@ class Autentication {
       .signInWithEmailAndPassword(email, password)
       .then((res) => {
         console.log("Has ingresado correctamente");
-        window.location.replace("/sale.html");
+        window.location.replace(
+          "https://luismadf.github.io/Proyecto_conexion_movil/sale.html"
+        );
       })
       .catch((error) => {
         console.log("Ha habido un problema");
