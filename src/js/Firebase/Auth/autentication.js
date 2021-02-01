@@ -3,8 +3,11 @@ class Autentication {
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .then((result) => {
-        console.log(result);
+      .then((res) => {
+        console.log(res);
+        res.user.updateProfile({
+          displayName: name,
+        });
         console.log("Todo bien!" + name);
       })
       .catch((error) => {
@@ -17,10 +20,11 @@ class Autentication {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then((res) => {
+        console.log(res);
         console.log("Has ingresado correctamente");
-        window.location.replace(
+        /*         window.location.replace(
           "https://luismadf.github.io/Proyecto_conexion_movil/sale.html"
-        );
+        ); */
       })
       .catch((error) => {
         console.log("Ha habido un problema");

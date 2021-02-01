@@ -47,3 +47,34 @@
   padding: 8px;
   height: 40px;
 }
+
+/* Nav */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: auto 10px;
+}
+
+.logo h1 {
+  font-size: 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.user {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.user-img {
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #f2f2f2;
+}
