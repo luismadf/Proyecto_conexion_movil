@@ -29,5 +29,14 @@ class Autentication {
       .catch((error) => {
         console.log("Ha habido un problema");
       });
+
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        debugger;
+        console.log(user);
+      } else {
+        console.log("Sin Usuario");
+      }
+    });
   }
 }
